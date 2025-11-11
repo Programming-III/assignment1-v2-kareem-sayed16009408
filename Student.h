@@ -10,10 +10,10 @@ using namespace std;
 
 class student : Person {
 private:
-  int year;
+  int yearLevel;
   string major;
   public:
-  student (string name, int id, int year, string major);
+  student (string name, int id, int yearLevel, string major);
   void display();
 };
 #endif //STUDENT_H
