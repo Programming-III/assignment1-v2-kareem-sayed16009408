@@ -9,8 +9,16 @@ class Person {
     int id;
     public:
     Person(string name, int id);
+    ~Person(){}
     void display();
+    string getName() {
+        return name;
+    }
+    int getId() {
+        return id;
+    }
 };
+
 
 
 
