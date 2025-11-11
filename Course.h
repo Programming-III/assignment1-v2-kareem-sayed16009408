@@ -12,7 +12,7 @@ class Course {
     Student* students;
     int currentStudents;
     public:
-    Course(string courseCode, string courseName,int maxStudents, Student *students, int currentStudents );
+    Course(string courseCode, string courseName,int maxStudents, int currentStudents );
     ~Course();
     void addStudent(const Student& s);
     void displayInfo();
