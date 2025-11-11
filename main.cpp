@@ -107,8 +107,14 @@ void Course::displayInfo() {
 
 // ==================== Main Function ====================
 int main() {
-    //Course c = Course();
-    Person per = Person("kareem", 1212);
+    Course c = Course("cs101", "cs", 10,0);
+
+    Student a = Student("kareem", 1212, 2, "CS");
+    Instructor i = Instructor("bo7a", 1233, "CS", 4);
+    c.addStudent(a);
+    c.displayInfo();
+    i.display();
+
 
 
 
