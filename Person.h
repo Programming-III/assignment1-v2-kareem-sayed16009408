@@ -10,7 +10,7 @@ class Person {
     public:
     Person(string name, int id);
     ~Person(){}
-    void display();
+    virtual void display();
     string getName() {
         return name;
     }
