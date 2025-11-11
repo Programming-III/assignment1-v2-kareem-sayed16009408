@@ -64,11 +64,12 @@ void Instructor::display() {
 
 // ==================== Course Class Implementation ====================
 
-Course::Course(string courseCode, string courseName, int maxStudents, Student *students, int currentStudents) {
+Course::Course(string courseCode, string courseName, int maxStudents, int currentStudents) {
     this->courseCode = courseCode;
     this->courseName = courseName;
     this->maxStudents = maxStudents;
-    this->students = &students[maxStudents];
+    Student *s = new Student[maxStudents];
+    this->students = s;
     this->currentStudents = currentStudents;
 }
 Course::~Course() {
@@ -106,6 +107,10 @@ void Course::displayInfo() {
 
 // ==================== Main Function ====================
 int main() {
+    //Course c = Course();
+    Person per = Person("kareem", 1212);
+
+
 
 
     return 0;
