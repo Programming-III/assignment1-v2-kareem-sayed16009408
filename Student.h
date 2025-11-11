@@ -13,6 +13,7 @@ private:
   int yearLevel;
   string major;
   public:
+  Student();
   Student (string name, int id, int yearLevel, string major);
   ~Student (){}
   void display();
